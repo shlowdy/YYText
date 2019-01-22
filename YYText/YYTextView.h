@@ -250,6 +250,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)scrollRangeToVisible:(NSRange)range;
 
+- (void)setPlaceholderText:(NSString *)placeholderText lineSpacing:(CGFloat)lineSpacing;
+
 /**
  The current selection range of the receiver.
  */

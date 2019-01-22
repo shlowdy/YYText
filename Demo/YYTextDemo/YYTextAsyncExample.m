@@ -163,10 +163,10 @@
     [self.tableView.visibleCells enumerateObjectsUsingBlock:^(YYTextAsyncExampleCell *cell, NSUInteger idx, BOOL *stop) {
         cell.async = async;
         NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-        if (_async) {
-            [cell setAyncText:_layouts[indexPath.row]];
+        if (self->_async) {
+            [cell setAyncText:self->_layouts[indexPath.row]];
         } else {
-            [cell setAyncText:_strings[indexPath.row]];
+            [cell setAyncText:self->_strings[indexPath.row]];
         }
     }];
 }
